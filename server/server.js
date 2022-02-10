@@ -1,8 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
-import exerciseRoutes from "./routes/exerciseRoutes.js";
-
+import exerciseRoutes from "./route/exerciseRoutes.js";
+import { connect } from "./config/database.js";
 dotenv.config();
+
+connect();
 
 const port = process.env.PORT || 5000;
 const server = express();

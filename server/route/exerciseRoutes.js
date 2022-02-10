@@ -5,7 +5,7 @@ import {
   getExercise,
   getExercises,
   updateExercise,
-} from "../controllers/exerciseControllers.js";
+} from "../controller/exerciseControllers.js";
 
 const router = express.Router();
 
